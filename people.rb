@@ -1,4 +1,13 @@
-def student
+class Student
+	def learn
+		"I get it!"
+	end
 end
-def instructor
+class Instructor
+	def teach
+		"Everything in Ruby is an Object"
+	end
 end
+
+dave = Student.new
+puts dave.learn
