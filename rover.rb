@@ -15,8 +15,8 @@ class Rover
 		@plateau = plateau
 	end
 	def instruction(str)
-		width = @plateau.width
-		height = @plateau.height
+		width = plateau.width
+		height = plateau.height
 		str.each_char do |char|
 			if char == "M"
 				move
@@ -31,7 +31,7 @@ class Rover
 		end
 	end
 	def move
-		case @orientation
+		case orientation
 			when "N" then @y += 1
 			when "S" then @y -= 1
 			when "E" then @x += 1
